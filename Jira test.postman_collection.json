@@ -1,0 +1,226 @@
+{
+	"id": "60b9eeb6-0bf6-45b8-8314-920938048277",
+	"name": "Jira Postman test",
+	"timestamp": "2025-06-03T15:39:23.644Z",
+	"collection_id": "26741710-d1c1e45e-81ab-4183-9672-23dbc08da90c",
+	"folder_id": 0,
+	"environment_id": "26741710-d408a35d-4b46-43ed-aaca-82f15346b9f6",
+	"totalPass": 10,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-06-03T15:39:18.058Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "db631473-97dd-4742-b655-a877d0091679",
+			"name": "Utworzenie nowego zgłoszenia (Create)",
+			"url": "https://annsadka.atlassian.net//rest/api/3/issue",
+			"time": 1666,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Response contains issue key": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains issue key": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1666
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Response contains issue key": true
+				}
+			]
+		},
+		{
+			"id": "a03e3ea2-e4e6-4e78-bfee-a85f76849462",
+			"name": "Pobranie zgłoszenia (Read)",
+			"url": "https://annsadka.atlassian.net/rest/api/3/issue/SP-1",
+			"time": 341,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Summary is present": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Summary is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				341
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Summary is present": true
+				}
+			]
+		},
+		{
+			"id": "f75cd348-98ae-41f0-8d9a-df610f3ff430",
+			"name": "Aktualizacja zgłoszenia (Update)",
+			"url": "https://annsadka.atlassian.net//rest/api/3/issue/JPT-1",
+			"time": 305,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				305
+			],
+			"allTests": [
+				{
+					"Status code is 204": true
+				}
+			]
+		},
+		{
+			"id": "e4c892e2-7ffa-4441-b605-a81b6bef71e6",
+			"name": "Utworzenie zgłoszenia z opisem",
+			"url": "https://annsadka.atlassian.net//rest/api/3/issue",
+			"time": 757,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Response contains issue key": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains issue key": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				757
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Response contains issue key": true
+				}
+			]
+		},
+		{
+			"id": "3c4f4430-7dc2-4d3e-b992-15ae0cd23bc6",
+			"name": "Usunięcie zgłoszenia (Delete)",
+			"url": "https://annsadka.atlassian.net//rest/api/3/issue/JPT-6",
+			"time": 1033,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1033
+			],
+			"allTests": [
+				{
+					"Status code is 204": true
+				}
+			]
+		},
+		{
+			"id": "c09baff6-58fa-4efe-9796-2999f1cd64e7",
+			"name": "Test negatywny (Read nieistniejącego zgłoszenia)",
+			"url": "https://annsadka.atlassian.net//rest/api/3/issue/NOT-EXIST",
+			"time": 394,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				394
+			],
+			"allTests": [
+				{
+					"Status code is 404": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 4496,
+	"collection": {
+		"requests": [
+			{
+				"id": "db631473-97dd-4742-b655-a877d0091679",
+				"method": "POST"
+			},
+			{
+				"id": "a03e3ea2-e4e6-4e78-bfee-a85f76849462",
+				"method": "GET"
+			},
+			{
+				"id": "f75cd348-98ae-41f0-8d9a-df610f3ff430",
+				"method": "PUT"
+			},
+			{
+				"id": "e4c892e2-7ffa-4441-b605-a81b6bef71e6",
+				"method": "POST"
+			},
+			{
+				"id": "3c4f4430-7dc2-4d3e-b992-15ae0cd23bc6",
+				"method": "DELETE"
+			},
+			{
+				"id": "c09baff6-58fa-4efe-9796-2999f1cd64e7",
+				"method": "GET"
+			}
+		]
+	}
+}
