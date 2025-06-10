@@ -29,9 +29,4 @@ Projekt prezentuje testowanie operacji CRUD na zgłoszeniach w Jira Cloud przez 
    - GET nieistniejącego zgłoszenia
    - Sprawdzenie statusu 404
 
-## Jak uruchomić testy?
 
-1. Zaimportuj kolekcję Postmana z repozytorium.
-2. Skonfiguruj środowisko z odpowiednimi zmiennymi (`baseUrl`, `projectKey`, `email`, `apiToken`).
-3. Uruchom kolejne requesty zgodnie z opisem.
-4. Wyniki testów zobaczysz w zakładce Test Results w Postmanie.
